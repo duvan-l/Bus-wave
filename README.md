@@ -33,3 +33,37 @@ Se ejecuta el comando en node para correr el proyecto en su local host
 ```
 npm run dev
 ```
+
+# Propiedades del vite
+Ejecución predeterminada de vite para local host
+
+VITE v5.3.1  
+
+- Local:   [http://localhost:5173/]
+
+# Compilación de la aplicación
+Puedes ejecutar el siguiente comando para compilar la aplicación en su totalidad.
+
+```
+npm run build
+```
+
+# Caracteristicas del proyecto
+- Project name: bus-wave-web
+- Package name: bus-wave-web
+- Framework: » React
+- Variant: » JavaScript + SWC
+
+# Instalación de GitPages
+se ejecuta el siguiente comando para instalar gh-pages
+
+```
+npm install gh-pages --save-dev
+```
+
+# Comando para compilar la aplicacióm en GitHub pages.
+El siguinete comando se encarga de compilar tu aplicación y enviarla a una rama llamada gh-pages, que GitHub usa para vincularse con las páginas de GitHub.
+
+```
+npm run deploy
+```
