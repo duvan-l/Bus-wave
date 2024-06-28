@@ -55,14 +55,14 @@ npm run build
 - Variant: » JavaScript + SWC
 
 # Instalación de GitPages
-se ejecuta el siguiente comando para instalar gh-pages
+se ejecuta el comando para instalar gh-pages
 
 ```
 npm install gh-pages --save-dev
 ```
 
 # Comando para compilar la aplicacióm en GitHub pages.
-El siguinete comando se encarga de compilar tu aplicación y enviarla a una rama llamada gh-pages, que GitHub usa para vincularse con las páginas de GitHub.
+El siguinete comando compila tu aplicación y la envia a una rama llamada gh-pages, que GitHub usa para vincularse con las páginas de GitHub.
 
 ```
 npm run deploy
