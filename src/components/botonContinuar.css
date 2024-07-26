@@ -1,0 +1,18 @@
+.continue-button {
+  background-color: #002D72;
+  color: #B8C9E0;
+  width: 235px;
+  height: 44px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.continue-button:hover {
+  opacity: 0.8;
+}
+
+.continue-button:active {
+  opacity: 0.6;
+}

@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css';
+import BotonContinuar from './components/botonContinuar.jsx';
+import IngresoTexto from './components/ingresoTexto.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className='App'>
+      <header className='App__header'>
+        <div className='header__img'>
+          <img src="src/img/logo1.png" className='img__logo' alt="Logo pagina web"/>
+        </div>
+        <div className='label__inicio'>
+         <IngresoTexto 
+            className="input"
+            label="USUARIO"
+            type="text"
+            placeholder="Escriba su usuario"
+          /> 
+          <IngresoTexto 
+            className="input"
+            label="CONTRASEÑA"
+            type="password"
+            placeholder="Escriba su contraseña"
+          /> 
+          <h3 className='inicio__alert'>
+            olvido su contraseña?
+          </h3>
+        </div>
+
+        <div className='botones'>
+          <BotonContinuar texto="REGISTRARSE" />
+          <BotonContinuar texto="CONTINUAR" />
+
+        </div>
+      </header>
+    </div>
+  );
 }
 
-export default App
+export default App;
