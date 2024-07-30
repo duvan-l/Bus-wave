@@ -1,7 +1,7 @@
 import React from 'react';
 import './ingresoTexto.css'; // Importa los estilos desde un archivo CSS
 
-const IngresoTexto = ({ label, type, placeholder }) => {
+const IngresoTexto = ({ label, type, placeholder, link }) => {
   return (
     <>
     <div className='inputContainer'>
@@ -10,9 +10,11 @@ const IngresoTexto = ({ label, type, placeholder }) => {
             className='input'
             placeholder={placeholder}
             type={type}
+            link={link}
             // value={value}
             // onChange={onChange}
             required
+            
         />
     </div>
  

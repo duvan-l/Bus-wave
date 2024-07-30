@@ -1,40 +1,41 @@
+// src/App.js
 import React from 'react';
+import { BrowserRouter as Router,} from 'react-router-dom';
 import './App.css';
-import BotonContinuar from './components/botonContinuar.jsx';
-import IngresoTexto from './components/ingresoTexto.jsx';
+import BotonContinuar from './components/BotonContinuar.jsx';
+import IngresoTexto from './components/IngresoTexto.jsx';
+import RecuperarContrasena from './pages/recuperarContra/recupCon.jsx'; // Asegúrate de que este archivo exista
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App__header'>
-        <div className='header__img'>
-          <img src="src/img/logo1.png" className='img__logo' alt="Logo pagina web"/>
-        </div>
-        <div className='label__inicio'>
-         <IngresoTexto 
-            className="input"
-            label="USUARIO"
-            type="text"
-            placeholder="Escriba su usuario"
-          /> 
-          <IngresoTexto 
-            className="input"
-            label="CONTRASEÑA"
-            type="password"
-            placeholder="Escriba su contraseña"
-          /> 
-          <h3 className='inicio__alert'>
-            olvido su contraseña?
-          </h3>
-        </div>
-
-        <div className='botones'>
-          <BotonContinuar texto="REGISTRARSE" />
-          <BotonContinuar texto="CONTINUAR" />
-
-        </div>
-      </header>
-    </div>
+    <Router>
+      <div className='App'>
+        <header className='App__header'>
+          <div className='header__img'>
+            <img src="src/img/logo1.png" className='img__logo' alt="Logo pagina web"/>
+          </div>
+          <div className='label__inicio'>
+            <IngresoTexto 
+              className="input"
+              label="USUARIO"
+              type="text"
+              placeholder="Escriba su usuario"
+            /> 
+            <IngresoTexto 
+              className="input"
+              label="CONTRASEÑA"
+              type="password"
+              placeholder="Escriba su contraseña"
+            /> 
+            <a className='inicio__alert' href="./src/pages/recuperarContra/recupCon.html">¿Olvidó su contraseña?</a>
+          </div>
+          <div className='botones'>
+            <BotonContinuar texto="REGISTRARSE" />
+            <BotonContinuar texto="CONTINUAR" />
+          </div>
+        </header>
+      </div>
+    </Router>
   );
 }
 

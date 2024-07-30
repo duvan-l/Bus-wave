@@ -1,0 +1,43 @@
+@import url(../../globalStyles.css);
+
+.RecupCon{
+  text-align: center;
+}
+
+.RecupCon__header {
+  background-color: #D9E0EA;
+  width: 770px;
+  height: 858px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 28px; */
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-radius: 25px;
+}
+
+.img__logo{
+  display: flex;
+  width: 204px;
+  height: 279px;
+  margin-bottom: 52px;
+}
+
+.label__inicio1{
+  margin-bottom: 48px;
+}
+
+/* .inicio__alert{
+  display: flex;
+  font-size: 15px;
+  color: #002052;
+  margin-bottom: 30px;
+} */
+
+.botones{
+  display: flex;
+  gap: 28px;
+  border-radius: 25px;
+}
