@@ -1,6 +1,5 @@
-// src/pages/RecuperarContrasena.jsx
 import React from 'react';
-import './recupCon.css'; // Asegúrate de que este archivo exista y contenga estilos
+import './recupCon.css';
 import IngresoTexto from '../../components/IngresoTexto';
 import BotonContinuar from '../../components/BotonContinuar';
 
@@ -11,7 +10,7 @@ const RecuperarContrasena = () => {
         <div className='header__img'>
           <img src="./logo1.png" className="img__logo" alt="Logo pagina web" />
         </div>
-        <div className='label__inicio'>
+        <div className='label__inicio1'>
           <IngresoTexto
             className="input"
             label="USUARIO"
@@ -22,8 +21,8 @@ const RecuperarContrasena = () => {
         <div className='botones'>
           <BotonContinuar texto="RECUPERAR CONTRASEÑA" href="src/pages/menRecuPer/menRecuPer.html" />
         </div>
-        <div className='volver'>
-        </div>
+        {/* <div className='volver'>
+        </div> */}
       </header>
     </div>
   );

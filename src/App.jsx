@@ -4,7 +4,7 @@ import { BrowserRouter as Router,} from 'react-router-dom';
 import './App.css';
 import BotonContinuar from './components/BotonContinuar.jsx';
 import IngresoTexto from './components/IngresoTexto.jsx';
-import RecuperarContrasena from './pages/recuperarContra/recupCon.jsx'; // Asegúrate de que este archivo exista
+// import RecuperarContrasena from './pages/recuperarContra/recupCon.jsx'; // Asegúrate de que este archivo exista
 
 function App() {
   return (
@@ -30,8 +30,8 @@ function App() {
             <a className='inicio__alert' href="./src/pages/recuperarContra/recupCon.html">¿Olvidó su contraseña?</a>
           </div>
           <div className='botones'>
-            <BotonContinuar texto="REGISTRARSE" />
-            <BotonContinuar texto="CONTINUAR" />
+            <BotonContinuar texto="REGISTRARSE" link="src/components/ingresoTexto.jsx"/>
+            <BotonContinuar texto="CONTINUAR" link="src/components/ingresoTexto.jsx"/>
           </div>
         </header>
       </div>
